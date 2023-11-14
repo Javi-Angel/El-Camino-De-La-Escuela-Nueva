@@ -1,0 +1,267 @@
+body {
+    background-color: #E3E4E2;
+}
+
+.text-center {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 60px;
+    color: #3C503C;
+}
+
+.text-center1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 60px;
+    color: #E3E4E2;
+}
+
+
+.caja1,
+.caja2 {
+    height: 100px;
+    float: none;
+    background-color: #5A765A;
+    border-radius: 20px;
+    padding: 10px 0 0 0;
+}
+
+.caja1 p,
+.caja2 p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px; 
+    color: #E3E4E2;
+    margin: 10px 0 0 0;
+}
+
+.textoExtendido1 {
+    height: 100px;
+    background-color: #5A765A;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.caja4 {
+    height: 100px;
+    background-color: #5A765A;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.caja5 {
+    margin: 190px 0 0 0;
+}
+
+.textoExtendido1 p,
+.caja4 p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px; 
+    color: #E3E4E2;
+}
+
+.caja5 p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px;
+    color: #3C503C;
+    margin: 60px 0 0 0;
+    
+}
+
+iframe {
+    border: none;
+}
+
+.col-md-8 {
+    text-align: center;
+    margin: 80px;
+    position: relative;
+}
+
+.caja9 p,
+.caja11 p,
+.caja12 p,
+.caja13 p,
+.caja16 p,
+.caja17 p,
+.caja18 p,
+.caja19 p,
+.caja22 p,
+.caja24 p {
+    font-family: 'Cormorant Garamond', serif;
+    color: #E3E4E2;
+}
+
+.caja7 p,
+.caja8 p {
+    font-size: 20px; 
+    margin: 10px 0 0 0;
+    font-family: 'Mukta', sans-serif;
+    color:  #E3E4E2;
+    text-align: justify
+}
+
+.caja9 p {
+    font-style: italic;
+    font-size: 40px;
+    margin: 60px 0 0 0;
+}
+
+.caja10 {background-color: transparent}
+
+.caja11 p,
+.caja12 p {
+    font-style: italic;
+    font-size: 60px; 
+    margin: 60px 0 0 0;
+    color: #3C503C
+}
+
+.caja13 p {
+    font-style: italic;
+    font-size: 20px;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    color: #5B775B;
+    text-align: center;
+    padding: 10px;
+    transform: translateY(100%);
+    transition: transform 0.3s, background-color 0.3s;
+    border: #3C503C;
+    font-size: 20px; 
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.image-container:hover .overlay {
+    transform: translateY(0);
+    background-color: #3C503C;
+}
+
+.overlay a.btn {
+    color: #E3E4E2;
+    padding: 5px 20px;
+    background-color: #3C503C;
+    border: #3C503C;
+    font-size: 20px; 
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.overlay a.btn:hover {
+    color: #E3E4E2;
+    background-color: #3C503C;
+    border: #3C503C;
+    font-size: 20px; 
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.img1 {
+    text-align: center;
+    margin: 100px 0 0 0;
+}
+
+.img2 {
+    text-align: center;
+    margin: 190px 0 0 0;
+}
+
+.img3 {
+    text-align: center;
+    margin: 50px 0 0 0;
+}
+
+.img4 {
+    text-align: center;
+}
+
+.caja14,
+.caja15,
+.caja16,
+.caja17,
+.caja18,
+.caja19,
+.caja21,
+.caja22,
+.caja23,
+.caja24 {
+    text-align: center;
+}
+
+.caja16 p,
+.caja17 p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px; 
+    color: #3C503C;
+}
+
+.caja18,
+.caja19 {
+    height: 100px;
+    float: none;
+    background-color: #5A765A;
+    border-radius: 20px;
+    padding: 10px 0 0 0;
+}
+
+.caja18 p,
+.caja19 p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px;
+    color: #E3E4E2;
+}
+
+.caja20 {background-size: cover}
+
+.caja21 {text-align: right; background-color: #454545}
+
+
+.caja22 {text-align: left; width: 3251px, 70%; height: 4552px, 70%}
+
+.caja22 p {
+    font-family: 'Mukta', sans-serif;
+    font-size: 20px; 
+    color: #E3E4E2;
+    margin: 20px 0 0 0;
+    text-align: justify
+}
+
+.caja22 h4 {
+    color: #E3E4E2;
+}
+
+.caja23 h4 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #E3E4E2;
+    font-size: 40px;
+}
+
+.caja24 p {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 40px;
+    color: #3C503C;
+}
+
+.caja26 {
+    margin: 190px 0 0 0;
+}
+.caja26 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px;
+    color: #E3E4E2;
+    margin: 60px 0 0 0;
+    
+}

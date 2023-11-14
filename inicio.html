@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>El Camino De La Escuela Nueva</title>
+    <meta name="description" content="Una guía interactiva de primeros pasos para Brackets.">
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        
+        #logotrauma {
+            transition: opacity 0.5s ease;}
+        
+        a:focus {
+            outline: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: transparent;
+        }
+
+        a:hover {
+            color: transparent;
+        }
+    
+    button {
+        background-color: transparent;
+        text-decoration: none;
+        color: transparent;
+        border: none;
+        padding: 0;
+        outline: none; 
+    }
+
+    button:hover {
+        color: transparent;
+    }
+     
+     button:focus {
+            outline: none;
+        }
+        
+    body {
+        transition: color 1s ease, background-color 1s ease; 
+        background-color: #E3E4E2; 
+    }
+        
+        #ImagenDeFondo {
+            transition:  0.5s ease; 
+        }
+
+        #logoImagen {
+            transition: 0.5s ease; 
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="col-md-10 mx-auto">
+                <div class="caja10" style="position: relative;">
+                    <img src="img/fotografias/Vacio.png" width="100%" id="ImagenDeFondo">
+                    <button id="cambiarEstiloBtn">
+                        <span><img src="img/iconos/Logo-documental-alt.png" width="60%" id="logoImagen" style="position: absolute; top: 30%; left: 20%;"/></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 d-flex align-items-center justify-content-center" style="min-height: 80vh;">
+                    <div class="caja11">
+                        <a href="Puntos-de-vista.html"><p class="text-center" id="puntosVista">Puntos de vista</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 d-flex align-items-center justify-content-center caja12" style="min-height: 80vh;">
+                    <div class="caja12">
+                      <a href="contenido-adicional.html"><p class="text-center" id="contenidoAdicional">Contenido adicional</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="col-md-10 mx-auto d-flex" style="min-height: 50vh;">
+                <div class="caja20" style="position: relative;">
+                    <a href="roles-del-equipo.html" id="rolesDelEquipoLink">
+                        <img src="img/retratos/Trauma.JPG" width="100%" alt="Imagen de fondo">
+                        <img src="img/iconos/Trauma-logo-alt.png" id="logotrauma" alt="Logo Trauma" width="20%" style="position: absolute; top: 30%; left: 40%;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+        
+
+    <script>
+        
+         var logotrauma = document.getElementById('logotrauma');
+        var rolesDelEquipoLink = document.getElementById('rolesDelEquipoLink');
+
+        rolesDelEquipoLink.addEventListener('mouseover', function () {
+            logotrauma.style.opacity = 0.2; 
+        });
+
+        rolesDelEquipoLink.addEventListener('mouseout', function () {
+            logotrauma.style.opacity = 1; 
+        });
+        
+        var body = document.body;
+        var logoImagen = document.getElementById('logoImagen');
+        var puntosVista = document.getElementById('puntosVista');
+        var contenidoAdicional = document.getElementById('contenidoAdicional');
+
+        var estiloOriginal = true;
+
+        document.getElementById('cambiarEstiloBtn').addEventListener('click', function () {
+            if (estiloOriginal) {
+                body.style.backgroundColor = "#454545"; 
+                body.style.color = "#E3E4E2";
+                puntosVista.style.color = "#E3E4E2";
+                contenidoAdicional.style.color = "#E3E4E2";
+                logoImagen.src = "img/iconos/Logo-documental.png";
+                ImagenDeFondo.src = "img/fotografias/Fondo.jpg";
+            } else {
+                body.style.backgroundColor = "#E3E4E2"; 
+                body.style.color = "";
+                puntosVista.style.color = "";
+                contenidoAdicional.style.color = "";
+                logoImagen.src = "img/iconos/Logo-documental-alt.png";
+                ImagenDeFondo.src = "img/fotografias/Vacio.png";
+            }
+
+            estiloOriginal = !estiloOriginal;
+        });
+    </script>
+    
+
+</body>
+
+</html>
